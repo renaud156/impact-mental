@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --secondary: #7c3aed;
+  --accent: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+  --neutral: #6b7280;
+  --light: #f3f4f6;
+  --dark: #1f2937;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-white text-gray-900;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-gray-900 mb-4;
+}
+
+.section-subtitle {
+  @apply text-xl text-gray-600 mb-12;
+}
